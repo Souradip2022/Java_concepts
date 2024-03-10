@@ -1,0 +1,25 @@
+// The code defines an interface `Message` with a method `greet()`. It then creates an anonymous class implementing the `Message` interface to print a greeting message "Hi Souradip!".
+package com.souradip.Inner_class_types;
+
+interface Message {
+  String greet();
+  String greet(String message);
+}
+
+public class AnonymousInnerClass {
+  // method which accepts the object of interface Message
+
+  public static void main(String args[]) {
+    // Instantiating the class
+    Message m1 = new Message() {
+      @Override
+      public String greet() {
+        return "Hi Souradip!";
+      }
+      public String greet(String message){
+        return message;
+      }
+    };
+    System.out.println(m1.greet());
+  }
+}
