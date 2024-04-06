@@ -15,7 +15,7 @@ public class Main {
     Circle c = new Circle();
     c.area();
 
-    Rectangle r = new Rectangle();
+    Shape r = new Rectangle();
     //r.area();
 
     //Method overriding takes place here when reference variable i.e. obj2 is of type parent class i.e. Shape

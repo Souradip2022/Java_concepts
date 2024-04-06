@@ -1,7 +1,5 @@
 package com.souradip.protected_access;
 
-import com.souradip.Test.Test;
-
 public class Subclass extends Test {
 
   public Subclass () {

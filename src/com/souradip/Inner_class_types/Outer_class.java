@@ -1,7 +1,11 @@
 package com.souradip.Inner_class_types;
 
 abstract class AnonymousInner {
+  int i;
   public abstract void myMethod();
+  void myMethod2() {
+    System.out.println("Non abstract method declared in abstract class");
+  }
 }
 public class Outer_class {
   public static void main(String args[]) {
@@ -14,5 +18,7 @@ public class Outer_class {
       }
     };
     inner.myMethod();
+    inner.myMethod2();
+    System.out.println(inner.i);
   }
 }
