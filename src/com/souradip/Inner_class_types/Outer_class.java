@@ -7,7 +7,7 @@ abstract class AnonymousInner {
     System.out.println("Non abstract method declared in abstract class");
   }
 }
-public class Outer_class {
+public class Outer_class extends AnonymousInner{
   public static void main(String args[]) {
     //AnonymousInner o1 = new AnonymousInner(); //Object creation for abstract class not possible
 
@@ -21,4 +21,13 @@ public class Outer_class {
     inner.myMethod2();
     System.out.println(inner.i);
   }
+
+  @Override
+  public void myMethod() {
+    System.out.println("Extended!");
+
+    Outer_class ob = new Outer_class();
+    ob.myMethod();
+  }
+  
 }

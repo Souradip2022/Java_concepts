@@ -1,6 +1,6 @@
 package com.souradip.protected_access;
 
-public class Subclass extends Test {
+public class Subclass extends SuperClass {
 
   public Subclass () {
     super();
@@ -10,7 +10,7 @@ public class Subclass extends Test {
   }
 
   public static void main(String[] args) {
-    Test obj1 = new Test();
+    SuperClass obj1 = new SuperClass();
     //When data-members and methods of superclass are protected and it has subclass in different package then
     // only object of subclass can access the superclass data-members and methods
     //obj1 is object of Superclass i.e. Test so it can not access a2 in protected mode
@@ -32,7 +32,7 @@ class SubSubclass extends Subclass {
   }
 
   public static void main(String[] args) {
-    Test obj1 = new Test();
+    SuperClass obj1 = new SuperClass();
     //Similar reason as of above
     //int a = obj1.a2;
 

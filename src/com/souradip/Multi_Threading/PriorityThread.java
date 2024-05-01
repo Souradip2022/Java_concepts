@@ -34,5 +34,9 @@ public class PriorityThread {
     t1.start();
     t2.start();
     t3.start();
+
+    System.out.println(t1.getPriority());
+    System.out.println(t1.getName());
+    System.out.println();
   }
 }

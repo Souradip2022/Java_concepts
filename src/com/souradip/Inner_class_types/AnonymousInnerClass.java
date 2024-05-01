@@ -10,7 +10,7 @@ interface Message {
 
 }
 
-public class AnonymousInnerClass {
+public class AnonymousInnerClass implements Message{
   // method which accepts the object of interface Message
 
   public static void main(String args[]) {
@@ -27,5 +27,15 @@ public class AnonymousInnerClass {
     };
     System.out.println(m1.greet());
     System.out.println(m1.i);
+  }
+
+  @Override
+  public String greet() {
+    return "";
+  }
+
+  @Override
+  public String greet(String message) {
+    return "";
   }
 }

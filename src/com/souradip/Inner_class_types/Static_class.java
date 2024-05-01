@@ -7,21 +7,24 @@ public class Static_class {
     }
   }
   public static void main(String args[]) {
-    Static_class.Nested_Demo nested = new Static_class.Nested_Demo();
+    Nested_Demo nested = new Nested_Demo();
     nested.my_method();
   }
 }
 
 class Main extends Static_class {
-  /*public static void main(String[] args) {
+  public static void main(String[] args) {
     Nested_Demo nested2 = new Nested_Demo();
     nested2.my_method();
-  }*/
-}
-
-class Main2 {
-  public static void main(String[] args) {
-    /*Static_class.Nested_Demo nested3 = new Static_class.Nested_Demo();
-    nested3.my_method();*/
   }
 }
+
+/*
+class Main2 {
+  public static void main(String[] args) {
+    */
+/*Static_class.Nested_Demo nested3 = new Static_class.Nested_Demo();
+    nested3.my_method();*//*
+
+  }
+}*/
